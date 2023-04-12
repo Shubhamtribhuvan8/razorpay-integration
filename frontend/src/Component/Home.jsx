@@ -34,6 +34,7 @@ razor.open();
 }
  return (
 <Box>
+    <h1 style={{textAlign:"center"}}>Buy Product</h1>
     <Stack direction={["column","row"]} spacing={4} flexWrap="wrap" justifyContent={"center"} alignItems={"center"} marginTop={"1%"}>
      <Card amount={2300} img={"https://images.unsplash.com/photo-1553456558-aff63285bdd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"}  checkOutHandler={checkOutHandler} />
      <Card amount={3400} img={"https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"} checkOutHandler={checkOutHandler}/>
