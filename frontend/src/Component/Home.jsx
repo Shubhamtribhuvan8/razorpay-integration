@@ -4,8 +4,8 @@ import axios from "axios"
 import Card  from './Card'
 export default function Home() {
   const checkOutHandler=async (amount)=>{
-    const {data:{key}}=await axios.get("http://localhost:4000/api/getkey")
-    const {data:{order}}=await axios.post("http://localhost:4000/api/checkout",{
+    const {data:{key}}=await axios.get("https://clever-teal-cowboy-hat.cyclic.app/api/getkey")
+    const {data:{order}}=await axios.post("https://clever-teal-cowboy-hat.cyclic.app/api/checkout",{
         amount
     })
     var options = {
@@ -16,7 +16,7 @@ export default function Home() {
     description: "Salary Transaction",
     image: "https://images.unsplash.com/photo-1520409364224-63400afe26e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fG1lbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     order_id: order.id, 
-    callback_url: "http://localhost:4000/api/paymentverification",
+    callback_url: "https://clever-teal-cowboy-hat.cyclic.app/api/paymentverification",
     prefill: {
         name: "Shubham Tribhuvan", 
         email: "shubhamtribhuvan8@gmail.com",
