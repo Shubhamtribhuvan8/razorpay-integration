@@ -17,7 +17,7 @@ const PaymentSucess = () => {
              </Text>
             </VStack>
         </Box>
-      PaymentSucessFul!
+      PaymentSuccessFul!
     </div>
   )
 }
