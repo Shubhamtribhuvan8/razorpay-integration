@@ -54,6 +54,10 @@ export default function Main() {
   };
 
   return (
+    <div>
+    </br>
+     </br>
+     </br>
     <Flex
       w="full"
       bg="#edf3f8"
@@ -93,5 +97,6 @@ export default function Main() {
         </Text>
       </Flex>
     </Flex>
+     </div>
   );
 }
