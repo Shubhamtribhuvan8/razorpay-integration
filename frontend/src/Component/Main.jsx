@@ -59,6 +59,7 @@ export default function Main() {
       bg="#edf3f8"
       _dark={{ bg: "#3e3e3e" }}
       p={10}
+      marginTop={"2%"}
       alignItems="center"
       justifyContent="center"
     >
