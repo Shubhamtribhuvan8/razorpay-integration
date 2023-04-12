@@ -26,12 +26,12 @@ export const Paymentverification=async (req,res)=>{
         razorpay_payment_id,
         razorpay_signature
      })   
-     res.redirect(`http://localhost:3000/paymentsuccess?references=${razorpay_payment_id}`)
+     res.redirect(`https://clever-teal-cowboy-hat.cyclic.app/paymentsuccess?references=${razorpay_payment_id}`)
     }
     else{
      res.status(400).json({
             success:false,
         });
-        res.redirect(`http://localhost:3000/failed?references=${razorpay_payment_id}`)
+        res.redirect(`https://clever-teal-cowboy-hat.cyclic.app/failed?references=${razorpay_payment_id}`)
       }
     }
