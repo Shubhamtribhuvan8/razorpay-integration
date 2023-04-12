@@ -6,6 +6,7 @@ function NavBar(props) {
 
   const divStyle = {
     padding: "20px",
+    width:"100%",
     backgroundColor: "black",
     position: "fixed",
     zIndex: 1,
