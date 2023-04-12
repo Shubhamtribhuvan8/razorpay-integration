@@ -1,10 +1,15 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Heading, VStack } from '@chakra-ui/react'
 import React from 'react'
-
-export default function Order() {
+const Order = () => {
   return (
-    <Box>
-      <h1>Order Placed!</h1>
-    </Box>
+    <div>
+        <Box>
+            <VStack h="100vh" justifyContent={"center"} >
+             <Heading textTransform={"uppercase"}>Order Placed !</Heading>
+            </VStack>
+        </Box>
+    </div>
   )
 }
+
+export default Order
